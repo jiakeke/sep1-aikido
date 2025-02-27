@@ -6,10 +6,9 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/jiakeke/sep1-aikido.git'
             }
         }
-        stage('build & test') {
+        stage('build') {
             steps {
-                /* sh 'mvn clean install' */
-                sh 'mvn clean verify'
+                sh 'mvn clean install'
             }
         }
 
