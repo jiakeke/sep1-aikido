@@ -30,7 +30,6 @@ class AikidoTrackerTest {
         for (int i = 0; i < 99; i++) {
             tracker.addSession("2025-01-10", 60);
         }
-        System.out.println(tracker.getSessions());
         assertTrue(tracker.isEligibleForKyu());
 
         AikidoTracker tracker2 = new AikidoTracker("Gary Blue", "2021-01-01");

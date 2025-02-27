@@ -31,7 +31,6 @@ public class AikidoTracker {
     public void addSession(String date, int duration) {
         sessions++;
         durations += duration;
-        System.out.println("Session added on " + date + " with " + duration + " minutes.");
     }
 
     public boolean isEligibleForKyu() {
@@ -41,7 +40,6 @@ public class AikidoTracker {
 
         LocalDate today = LocalDate.now();
         long months = java.time.temporal.ChronoUnit.MONTHS.between(start, today);
-        System.out.println("Months: " + months);
 
         return months >= 6 || sessions >= 100;
     }

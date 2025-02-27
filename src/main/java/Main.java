@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Main.class.getName());
         System.out.println("===== Aikido Practice Tracker =====");
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter student name: ");
